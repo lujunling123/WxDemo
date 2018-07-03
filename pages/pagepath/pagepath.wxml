@@ -1,0 +1,94 @@
+<import src="../../templates/temp1.wxml"/>
+
+<view class='home-top'>
+  <view class='postionsimg'>
+    <image style="width: 100%; height: 100%; " src="{{src}}"></image>
+  </view>
+  <view bindtap='countclick' class='home-span'>欢迎来到我的小屋！</view>
+  <view wx:if="{{showdiv}}">{{myobject.name}}</view>
+  <!-- <view class='aftercontent' wx:else>{{myobject.age}}</view>
+  <view class=" log-list">
+  <view wx:for="{{input_data}}" wx:for-index="a" wx:for-item="b" wx:key="c">{{a}}{{b}}</view>
+<!--有wx:key-->
+<!-- <input value="id:{{item.id}}"   wx:for="{{input_data}}"   wx:key="unique" />
+<button bindtap="addToFront">
+    前部插入元素
+</button>
+<button bindtap="switch">
+    随机排序
+</button>
+</view> -->
+<!-- 模板 --> 
+   <!-- <template is="temp1" data="{{cententtemp1:'aaa'}}" /> -->
+<!-- 滑块视图组件：基本轮播图 -->
+</view>
+  <swiper indicator-dots='true' autoplay='true' current='0' interval='2000' duration='1000' bindchange='change' circular='true'>
+    <block wx:for="{{runimg}}" wx:for-index="a" wx:for-item="b" >
+      <swiper-item class="run-block">
+        <image class='run-img' src='{{b.imgpage}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='content-title'>
+    <view class='content-index'>
+      <view class='content-flex' wx:for="{{fleximg}}" wx:for-index="fa" wx:for-item="fb">
+        <image class="flex-img" src='{{fb.imgpage}}'></image>
+        <text class='flex-p'>{{fb.title}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='porduct'>
+    <text class='porduct-title'>我的技能展示</text>
+    <view class='porduct-t'>Product</view>
+  </view>
+  <!-- 进度条 -->
+  <view class='progress'>
+    <block wx:for="{{progress}}" wx:for-index="pa" wx:for-item="pb">
+      <text>{{pb.text}}</text>
+      <progress percent='{{pb.progressnum}}' show-info='true' stroke-width='9' active color='red'>
+      </progress>
+    </block>    
+  </view>
+  <!-- 表单组件 -->  
+  <view class='porduct'>
+    <text class='porduct-title'>加入我们</text>
+    <view class='porduct-t'>linkme</view>
+    <view class='radios'> 
+      <input class="forminput" cursor-spacing='10' type='text' placeholder='请输入您的姓名' value='{{inpvalue}}'/>
+      <radio-group bindchange="changeChoosed">性别：
+        <block wx:for="{{radios}}">
+          <radio class="radio-item" value='{{item.value}}' checked='{{item.checkeditem}}'>{{item.text}}              </radio>
+        </block>
+      </radio-group>
+      <!-- 复选框 -->
+      <checkbox-group bindchange="checkboxChoosed">
+        <block wx:for="{{checkbox}}" wx:for-index="ga" wx:for-item="gb">
+          <label><checkbox value='{{gb.value}}' checked='{{gb.checkeditem}}'>{{gb.text}}</checkbox></label>
+        </block>        
+      </checkbox-group>
+    </view>
+    <!-- switch组件 -->
+    <view wx:for="{{switchs}}">
+    <switch data-name='{{item.name}}' type='{{item.type}}' checked='{{item.checked}}' bindchange='{{item.changeEventName}}'>{{item.text}}
+    </switch>
+    </view>
+    <!-- lable组件:控制点击文案时也能选中对应的单选或复选 -->
+    <!-- 滑动组件slider -->
+    <slider max='10' min='1' step='1' color='red' ></slider>
+    <!--picker组件  -->
+    <picker value='{{selindex}}' range='{{sellist}}'>
+      <view>当前选中：{{sellist[selindex]}}</view>
+    </picker>
+    <!-- 时间选择器 -->
+    <picker value='{{seltime}}' mode="time" start="{{startTime}}" end="{{endTime}}">
+      <view>当前选中的时间：{{seltime}}</view>
+    </picker>
+    <!-- form表单 -->
+    <!-- <form bindsubmit="formSubmit" bindreset="formReset"> 
+     <input class="forminput" name="uname" cursor-spacing='10' type='text' placeholder='请输入您的姓名' value='{{uname}}'/>
+      <input class="forminput" name="upass" cursor-spacing='10' password placeholder='请输入您的姓名' value='{{upass}}'/>
+      <button formType="submit" style="background:#ff9900">提交</button>     
+    </form> -->
+    客服<contact-button session-from="weapp"></contact-button>
+    <button bindtap='onfile'>上传照片</button>
+  </view>

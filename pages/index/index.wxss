@@ -1,0 +1,162 @@
+/**index.wxss**/
+page{
+  background:  #f3f3f3;
+}
+.index-home{
+  position: relative;
+  display: flex;
+}
+.index-left{
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.index-list{
+  width: 128pt;
+  height: 350px;
+  background: #fff;
+  padding: 40pt 0;
+}
+.index-list-margin{
+  height:35pt;
+  font-size: 10pt;
+  line-height: 25pt;
+  padding:0 40pt;
+  border-bottom: 1px solid #f3f3f3;
+
+}
+.home{
+  
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  background: #f3f3f3;
+}
+.home-top{
+  width: 100%;
+  text-align: center;
+  line-height: 40pt;
+  background: #fff;
+}
+.postionsimg{
+  float: left;
+  width: 15pt;
+  height: 20pt;
+  margin-top: 3pt;
+  margin-left: 5pt;
+}
+.home-span{
+  color:red;
+  font-size:11pt;
+}
+.run-block{
+  width: 100%;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+}
+.sel-list{
+  width: 100%;
+  height: 60pt;
+  background: #fff;
+  display: flex;
+}
+.list-li{
+  width: 15.1%;
+  height: 100%;
+  padding: 7pt;
+  font-size: 8pt;
+  color: #555556;
+  text-align: center;
+}
+.list-li-img{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100px;  
+}
+.images{
+  padding-top: 4pt;
+  width: 28px;
+  height: 28px;
+}
+.list-li-title{
+  margin-top: 5pt;
+}
+.produce-index{
+  margin: 0 auto;
+  text-align: center;  
+  padding: 15pt 0;
+}
+.product-btitle{
+  color: green;
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-ptitle{
+  color: #555556;
+  font-size: 14px;
+}
+.product-table{
+  display:flex;
+  flex-wrap: wrap;
+  text-align: left;
+  font-size: 13px;
+  color: #555556;
+  margin: 0 auto;
+  padding:0 0 10px;
+
+}
+.table-li{
+  width: 44.1%;
+  height: 100px;
+  padding: 15px 10px;
+}
+.li-image{
+  height: 100%;
+}
+image{
+  max-height: 100%;
+  max-width: 100%;
+}
+.li-title{
+  padding-left: 10px;
+}
+.produce{
+  margin-bottom: 20px;
+}
+.caseshow{
+  background: #fff;
+  margin-bottom: 20px;
+}
+.news{
+  margin: 0 10px;
+}
+.newleft{
+  float: left;
+}
+.newimg{
+  width: 100px;
+  height: 90px;
+}
+.newright{
+  margin-left: 110px;
+  font-size:16px;
+  font-weight:700;
+
+}
+.newst{
+  height: 15px;
+  padding: 15px  0 10px;
+  overflow: hidden;
+}
+.newsc{
+  height: 27px;
+  font-size:13px;
+  color:#555556;
+  font-weight: 500;
+  padding: 10px 0;
+  overflow: hidden;
+}

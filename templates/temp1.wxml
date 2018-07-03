@@ -1,0 +1,7 @@
+<template name="temp1">
+    <view>列表{{cententtemp1}}</view>
+</template>
+
+<template name="temp2">
+  <view>{{contenttemp2}}</view>
+</template>

@@ -1,0 +1,133 @@
+/**index.wxss**/
+page{
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-top{
+  height: 35pt;
+  background-color: #6c5b50;
+  text-align: center;
+  line-height: 35pt;
+}
+.postionsimg{
+  float: left;
+  width: 20pt;
+  height: 20pt;
+  margin-top: 5pt;
+  margin-left: 5pt;
+}
+.home-span{
+  color:#fff;
+  font-size:11pt;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.aftercontent::before{
+  background-color: palevioletred;
+  content: "";
+  display: block;
+  border: 1px solid #E70047;
+  width: 100px;
+  height: 20px;
+}
+/* .aftercontent::after{
+  background-color: red;
+  content: "";
+  display: block;
+  border: 1px solid #E70047;
+  width: 100px;
+  height: 20px;
+}
+input {
+  background: none repeat scroll 0 0 #FFEEEE;
+  float: left;
+  width: 240px;
+  padding: 0 3px;
+  padding-left:10px;
+  height: 42px;
+  color: #69737d;
+  font-size: 16px;
+  line-height: 42px;
+  border: 1px solid #E70047;
+  margin: 20rpx;
+}
+button{
+  display: inline-block; 
+  vertical-align: baseline; 
+  margin: 0 2px; 
+  margin-top:30rpx;
+  outline: none; 
+  text-align: center; 
+  text-decoration: none; 
+  font: 14px/100% Arial, Helvetica, sans-serif; 
+  padding: .5em 2em .55em; 
+  text-shadow: 0 1px 1px rgba(0,0,0,.3); 
+  border-radius: .5em; 
+  box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+} */
+
+.run-block{
+  width: 100%;
+}
+.run-img{
+  width: 100%;
+  height: 100%;
+}
+.content-title{
+  background-color: white;
+}
+.content-index{
+  display: flex;
+}
+.content-flex{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.flex-img{
+  width: 37px;
+  height: 37px;
+}
+.flex-p{
+  padding-top: 5px;
+  font-size: 12px;
+}
+.porduct{
+  margin-top:5pt; 
+  text-align: center;
+
+}
+.porduct-title{
+  font-size: 19px;
+  color: #ff8604;
+  font-weight: 700;
+  letter-spacing: 8px;
+  position: relative;
+}
+.porduct-t{
+  font-size: 12px;
+  color: #999;
+}
+.progress{
+  width: 90%;
+  margin: 0 auto;
+}
+.radios{
+  width: 100%;
+}
+.radio-item{
+  padding: 5px 10px;
+}
+.forminput{
+  border: 1px solid #fff;
+  background-color: #fff;
+  margin:0 30px;
+}
