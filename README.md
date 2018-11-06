@@ -1,5 +1,5 @@
 
-# myholleworld
+# wxDemo
 一个微信小程序的demo
 
 用于熟悉文档。
